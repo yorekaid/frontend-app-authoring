@@ -85,7 +85,7 @@ export const LEVEL_CONFIG: Record<Depth, LevelConfig> = {
     childContainerTestId: 'section-card__subsections',
     containerType: ContainerType.Subsection,
     iconSize: 'md',
-    background: { padding: '1.75rem' },
+    background: { padding: '1.75rem', backgroundColor: 'var(--section-card-bg, #ffffff)' },
   },
   1: {
     name: 'subsection',
@@ -95,14 +95,14 @@ export const LEVEL_CONFIG: Record<Depth, LevelConfig> = {
     childContainerTestId: 'subsection-card__units',
     containerType: ContainerType.Unit,
     iconSize: 'sm',
-    background: { background: '#f8f7f6' },
+    background: { backgroundColor: 'var(--subsection-card-bg, #f8f7f6)' },
   },
   2: {
     name: 'unit',
     contentClass: 'unit-card__content',
     contentTestId: 'unit-card__content',
     iconSize: 'xs',
-    background: { background: '#fdfdfd' },
+    background: { backgroundColor: 'var(--unit-card-bg, #fdfdfd)' },
   },
 };
 

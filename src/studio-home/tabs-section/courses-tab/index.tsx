@@ -229,7 +229,7 @@ export const CoursesList: React.FC<Props> = ({
           {isShowProcessing && <ProcessingCourses />}
           <div className="d-flex flex-row align-items-center justify-content-between my-4">
             <CoursesFilters dispatch={dispatch} locationValue={locationValue} isLoading={isLoading} />
-            <p data-testid="pagination-info" className="my-0">
+            <p data-testid="pagination-info" className="my-0 small">
               {intl.formatMessage(messages.coursesPaginationInfo, {
                 length: courses?.length,
                 total: coursesCount,

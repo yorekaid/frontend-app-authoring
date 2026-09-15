@@ -1,4 +1,4 @@
-import { StudioFooterSlot } from '@edx/frontend-component-footer';
+import { FooterSlot } from '@yorekaid/frontend-component-footer';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import {
   ActionRow,
@@ -234,7 +234,7 @@ const LibraryCollectionPage = () => {
             <LibraryCollectionComponents />
           </SearchContextProvider>
         </Container>
-        {!componentPickerMode && <StudioFooterSlot containerProps={{ size: undefined }} />}
+        {!componentPickerMode && <FooterSlot containerProps={{ size: undefined }} />}
       </div>
       {!!sidebarItemInfo?.type && (
         <div className="library-authoring-sidebar box-shadow-left-1 bg-white" data-testid="library-sidebar">

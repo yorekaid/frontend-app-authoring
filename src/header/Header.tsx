@@ -1,4 +1,4 @@
-import { StudioHeader } from '@edx/frontend-component-header';
+import { StudioHeader } from '@yorekaid/frontend-component-header';
 import { getConfig } from '@edx/frontend-platform';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import { type Container, useToggle } from '@openedx/paragon';

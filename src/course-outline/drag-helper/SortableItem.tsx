@@ -59,11 +59,11 @@ const SortableItem = ({
     zIndex: isDragging ? 200 : undefined,
     transform: CSS.Translate.toString(transform),
     transition,
-    background: 'white',
+    backgroundColor: 'var(--sortable-item-bg, #ffffff)',
     padding: '1rem 1.5rem',
     marginBottom: '1.5rem',
     borderRadius: '0.35rem',
-    boxShadow: '0 0 .125rem rgba(0, 0, 0, .15), 0 0 .25rem rgba(0, 0, 0, .15)',
+    boxShadow: 'var(--sortable-item-shadow, 0 0 .125rem rgba(0, 0, 0, .15), 0 0 .25rem rgba(0, 0, 0, .15))',
     ...componentStyle,
   };
 

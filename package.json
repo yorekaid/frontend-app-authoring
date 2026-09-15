@@ -69,6 +69,8 @@
     "@tanstack/react-query": "5.95.2",
     "@tanstack/react-table": "^8.21.3",
     "@tinymce/tinymce-react": "^6.0.0",
+    "@yorekaid/frontend-component-footer": "^1.0.1",
+    "@yorekaid/frontend-component-header": "^1.0.10",
     "classnames": "2.5.1",
     "codemirror": "^6.0.0",
     "email-validator": "2.0.4",

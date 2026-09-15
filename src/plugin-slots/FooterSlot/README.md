@@ -10,7 +10,7 @@
 
 This slot is used to replace/modify/hide the footer.
 
-The implementation of the `StudioFooterSlot` component lives in [the `frontend-component-footer` repository](https://github.com/openedx/frontend-component-footer/).
+The implementation of the `FooterSlot` component lives in [the `frontend-component-footer` repository](https://github.com/openedx/frontend-component-footer/).
 
 ## Example
 

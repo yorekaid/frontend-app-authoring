@@ -138,8 +138,10 @@ const CoursesFilters = ({
         )}
       </div>
 
-      <CoursesTypesFilterMenu onItemMenuSelected={handleMenuFilterItemSelected} />
-      <CoursesOrderFilterMenu onItemMenuSelected={handleMenuFilterItemSelected} />
+      {
+        /* <CoursesTypesFilterMenu onItemMenuSelected={handleMenuFilterItemSelected} />
+      <CoursesOrderFilterMenu onItemMenuSelected={handleMenuFilterItemSelected} /> */
+      }
       <CourseImportFilter />
     </div>
   );

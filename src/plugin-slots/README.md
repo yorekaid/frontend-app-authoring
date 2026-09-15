@@ -20,4 +20,4 @@
 
 ## Footer Slot
 
-- [`org.openedx.frontend.layout.studio_footer.v1`](./StudioFooterSlot/)
+- [`org.openedx.frontend.layout.studio_footer.v1`](./FooterSlot/)

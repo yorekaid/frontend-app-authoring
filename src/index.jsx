@@ -45,6 +45,7 @@ import { ContentType } from './library-authoring/routes';
 import 'react-datepicker/dist/react-datepicker.css';
 import './index.scss';
 import { LegacyLibMigrationPage } from './legacy-libraries-migration/LegacyLibMigrationPage';
+import { ThemeProvider } from './ThemeContext';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -142,7 +143,9 @@ subscribe(APP_READY, () => {
 
   root.render(
     <StrictMode>
-      <App />
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
     </StrictMode>,
   );
 });

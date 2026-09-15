@@ -10,7 +10,7 @@ import {
 } from '@openedx/paragon';
 import { Add as AddIcon, Error, ManageAccounts } from '@openedx/paragon/icons';
 import { FormattedMessage, useIntl } from '@edx/frontend-platform/i18n';
-import { StudioFooterSlot } from '@edx/frontend-component-footer';
+import { FooterSlot } from '@yorekaid/frontend-component-footer';
 import { Link, useLocation } from 'react-router-dom';
 
 import { useWaffleFlags } from '@src/data/apiHooks';
@@ -167,11 +167,11 @@ const StudioHome = () => {
     }
     return (
       <Layout
-        lg={[{ span: 9 }, { span: 3 }]}
-        md={[{ span: 9 }, { span: 3 }]}
-        sm={[{ span: 9 }, { span: 3 }]}
-        xs={[{ span: 9 }, { span: 3 }]}
-        xl={[{ span: 9 }, { span: 3 }]}
+        lg={[{ span: 12 }]}
+        md={[{ span: 12 }]}
+        sm={[{ span: 12 }]}
+        xs={[{ span: 12 }]}
+        xl={[{ span: 12 }]}
       >
         <Layout.Element>
           <section>
@@ -187,9 +187,11 @@ const StudioHome = () => {
             />
           </section>
         </Layout.Element>
-        <Layout.Element>
+        {
+          /* <Layout.Element>
           <HomeSidebar />
-        </Layout.Element>
+        </Layout.Element> */
+        }
       </Layout>
     );
   };
@@ -216,7 +218,7 @@ const StudioHome = () => {
           isQueryPending={anyQueryIsPending}
         />
       </div>
-      <StudioFooterSlot />
+      <FooterSlot />
     </>
   );
 };
