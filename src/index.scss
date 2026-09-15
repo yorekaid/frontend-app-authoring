@@ -168,7 +168,8 @@ body.authoring-dark-mode {
 
   .form-control,
   .form-select,
-  .form-check-input {
+  .form-check-input,
+  .datepicker-custom-control {
     background-color: #1e2d45 !important;
     border-color: rgba(255, 255, 255, 0.2) !important;
     color: #dde3ed !important;
@@ -187,7 +188,7 @@ body.authoring-dark-mode {
 
   /* Alert / Banner Overrides */
   .alert {
-    background-color: rgba(255, 255, 255, 0.05) !important;
+    background-color: #101c2e !important;
     color: #dde3ed !important;
     border: 1px solid rgba(255, 255, 255, 0.1) !important;
 
@@ -1057,5 +1058,93 @@ body.authoring-dark-mode {
   .xblock-container-iframe {
     filter: invert(0.93) hue-rotate(180deg) !important;
     border-radius: 4px;
+  }
+
+  /* WYSIWYG Editor (TinyMCE) Dark Mode */
+  .tox-tinymce {
+    filter: invert(0.93) hue-rotate(180deg) !important;
+    border-radius: 4px;
+  }
+
+  /* Schedule and Details Page Overrides */
+  .schedule-and-details {
+    .section-container .section-header {
+      border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+
+      h2 {
+        color: #dde3ed !important;
+      }
+    }
+  }
+
+  .schedule-section .schedule-date-item-container {
+    border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .basic-section .pgn__pageBanner-component {
+    background-color: #101c2e !important;
+    color: #dde3ed !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  /* Pacing Section Radio Buttons and Text */
+  .pacing-section {
+    label.pgn__form-label,
+    .pgn__form-control-description,
+    p.pgn__form-label {
+      color: #dde3ed !important;
+    }
+  }
+
+  /* Datepicker popup and calendar */
+  .react-datepicker {
+    background-color: #1e2d45 !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #dde3ed !important;
+  }
+
+  .react-datepicker__header {
+    background-color: #101c2e !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+  }
+
+  .react-datepicker__current-month,
+  .react-datepicker__day-name,
+  .react-datepicker-time__header {
+    color: #dde3ed !important;
+  }
+
+  .react-datepicker__day,
+  .react-datepicker__time-name {
+    color: #dde3ed !important;
+    
+    &:hover {
+      background-color: #101c2e !important;
+    }
+  }
+
+  .react-datepicker__day--selected,
+  .react-datepicker__day--keyboard-selected {
+    background-color: var(--pgn-color-brand-base) !important;
+    color: #131c2e !important;
+  }
+
+  .react-datepicker__day--disabled {
+    color: rgba(255, 255, 255, 0.3) !important;
+  }
+
+  .datepicker-custom-control-icon {
+    color: #dde3ed !important;
+  }
+
+  /* Course Upload Image Overrides */
+  .image-preview,
+  .image-body .pgn__dropzone {
+    background-color: #101c2e !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+  }
+  
+  .image-preview {
+    box-shadow: none !important;
   }
 }

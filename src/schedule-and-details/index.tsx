@@ -248,11 +248,11 @@ const ScheduleAndDetails = () => {
         </div>
         <section className="setting-items mb-4">
           <Layout
-            lg={[{ span: 9 }, { span: 3 }]}
-            md={[{ span: 9 }, { span: 3 }]}
-            sm={[{ span: 9 }, { span: 3 }]}
-            xs={[{ span: 9 }, { span: 3 }]}
-            xl={[{ span: 9 }, { span: 3 }]}
+            lg={[{ span: 12 }]}
+            md={[{ span: 12 }]}
+            sm={[{ span: 12 }]}
+            xs={[{ span: 12 }]}
+            xl={[{ span: 12 }]}
           >
             <Layout.Element>
               <article>
@@ -360,12 +360,14 @@ const ScheduleAndDetails = () => {
                 </div>
               </article>
             </Layout.Element>
-            <Layout.Element>
+            {
+              /* <Layout.Element>
               <ScheduleSidebar
                 courseId={courseId}
                 proctoredExamSettingsUrl={mfeProctoredExamSettingsUrl}
               />
-            </Layout.Element>
+            </Layout.Element> */
+            }
           </Layout>
         </section>
       </Container>
